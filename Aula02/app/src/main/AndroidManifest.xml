@@ -15,7 +15,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CadastroPFActivity"></activity>
+        <activity android:name=".CadastroPFActivity" />
+        <activity android:name=".CadastroPJActivity" />
+        <activity android:name=".CadastrarConta"></activity>
     </application>
 
 </manifest>

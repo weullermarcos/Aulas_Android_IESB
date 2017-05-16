@@ -10,19 +10,19 @@
     tools:context="com.example.dmovel.aula02.MainActivity">
 
     <Button
-        android:id="@+id/main_cadastra_conta"
+        android:id="@+id/main_cadastrar_conta"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Cadastrar Conta" />
 
     <Button
-        android:id="@+id/main_cadastra_pf"
+        android:id="@+id/main_cadastrar_pf"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Cadastrar Pessoa Fisica" />
+        android:text="Cadastrar Pessoa Fisica"/>
 
     <Button
-        android:id="@+id/main_cadastra_pj"
+        android:id="@+id/main_cadastrar_pj"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Cadastrar Pessoa Juridica" />
