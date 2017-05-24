@@ -21,7 +21,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent(MainActivity.this, ListaContatos.class);
+                //Chamando intent de forma explicita
+                //Intent intent = new Intent(MainActivity.this, ListaContatos.class);
+                //startActivity(intent);
+
+                //chamando intent de forma implicita - Olhar configuração no AndroidManifest.xml
+                Intent intent = new Intent("LISTA_CONTATOS");
+                intent.addCategory("LISTA_CONTATOS");
                 startActivity(intent);
 
 
