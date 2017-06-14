@@ -5,7 +5,7 @@ Repositório para armazenamento das aulas de Android IESB
 
 ## Table of Contents
   - [MySQL](#mysql)
-    - [Ignore Whitespace](#ignore-whitespace)
+    - [Eu sou um teste](#eu-sou-um-teste)
 
 
 
@@ -23,6 +23,6 @@ Repositório para armazenamento das aulas de Android IESB
 
 
 ## MySQL
-### Ignore Whitespace
+### Eu sou um teste
 Adding `?w=1` to any diff URL will remove any changes only in whitespace, enabling you to see only the code that has changed.
 
