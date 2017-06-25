@@ -29,6 +29,8 @@ Repositório utilizado para armazenamento de atividades do curso:
 
 https://www.youtube.com/watch?v=TiXI72uVfzw&list=PLVawTLaO8Js9tPdmgmv8cPRsjQkia_zPC&index=8
 
+
+
 ### Calculadora Simples
 Desenvolvimento de uma calculadora simples segundo a aula:
 
