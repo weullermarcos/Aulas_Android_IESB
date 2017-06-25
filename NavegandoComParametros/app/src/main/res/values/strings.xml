@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Navegando Com Parametros</string>
+    <string name="btnSend">Enviar</string>
+</resources>
