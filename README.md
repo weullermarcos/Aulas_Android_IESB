@@ -4,8 +4,9 @@ Repositório para armazenamento das aulas de Android IESB
 
 
 ## Table of Contents
-  - [MySQL](#mysql)
-    - [Eu sou um teste](#eu-sou-um-teste)
+  - [Video Aulas](#video-aulas)
+    - [Calculadora Simples](#calculadora-simples)
+    - [Navegacao Entre telas com parametros](#navegacao-entre-telas-com-parametros)
 
 
 
@@ -22,7 +23,23 @@ Repositório para armazenamento das aulas de Android IESB
 
 
 
-## MySQL
-### Eu sou um teste
-Adding `?w=1` to any diff URL will remove any changes only in whitespace, enabling you to see only the code that has changed.
+## Video Aulas
+
+Repositório utilizado para armazenamento de atividades do curso:
+
+https://www.youtube.com/watch?v=TiXI72uVfzw&list=PLVawTLaO8Js9tPdmgmv8cPRsjQkia_zPC&index=8
+
+### Calculadora Simples
+Desenvolvimento de uma calculadora simples segundo a aula:
+
+https://www.youtube.com/watch?v=3vZHEfDDpNg&list=PLVawTLaO8Js9tPdmgmv8cPRsjQkia_zPC&index=7
+
+
+### Navegacao Entre telas com parametros
+Navegação Simples entre telas passando parâmetros, segundo a aula:
+
+https://www.youtube.com/watch?v=TiXI72uVfzw&list=PLVawTLaO8Js9tPdmgmv8cPRsjQkia_zPC&index=8
+
+
+
 
