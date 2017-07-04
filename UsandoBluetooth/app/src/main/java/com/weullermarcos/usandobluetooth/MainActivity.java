@@ -5,6 +5,8 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.pm.PackageManager;
+import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -14,6 +16,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import java.util.Set;
+import java.util.jar.Manifest;
 
 
 public class MainActivity extends AppCompatActivity  implements View.OnClickListener{
@@ -25,6 +28,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //cria lista de dispositivos
         lstDevices = (ListView) findViewById(R.id.lstDevices);
 
         IntentFilter filter = new IntentFilter(BluetoothDevice.ACTION_FOUND);
@@ -62,6 +66,8 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
 
 
 //        Forma 1 de fazer
+//        lista todos os dispositivos bluetooth que já conectaram com o celular
+//
 //        BluetoothAdapter btAdapter = BluetoothAdapter.getDefaultAdapter();
 //        Set<BluetoothDevice> pairedDevices = btAdapter.getBondedDevices();
 //
@@ -76,6 +82,18 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
 //            }
 //        }
 
+
+    }
+
+    private void checkBluetooth(){
+
+        int hasPermission = ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION);
+
+        if(hasPermission == PackageManager.PERMISSION_GRANTED){
+            continueDoDiscvery();
+        }
+
+        ActivityCompat.requestPermissions(this, new String[]{android.Manifest.permission.ACCESS_COARSE_LOCATION}, REQUEST_COARSE_LOCATION_PERMISSIONS);
 
     }
 
