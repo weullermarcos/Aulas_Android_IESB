@@ -20,6 +20,7 @@ import android.util.Log;
 import android.view.View;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -127,6 +128,21 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         };
+
+        lstDevices.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                String macAddress = (String) lstDevices.getItemAtPosition(position);
+
+                //O Mac Address são os 17 últimos caracteres
+                macAddress = macAddress.substring(macAddress.length() - 17);
+
+                showToast("Mac Address selecionado: " + macAddress);
+
+            }
+        });
+
 
 
         registerReceiver(mReceiver, filter);
