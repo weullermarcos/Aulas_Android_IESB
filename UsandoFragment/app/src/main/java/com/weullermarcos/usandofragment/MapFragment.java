@@ -18,6 +18,7 @@ import com.weullermarcos.usandofragment.R;
 public class MapFragment extends Fragment {
 
     Button btnMarket;
+    boolean isExtend = true;
 
     public MapFragment() {
         // Required empty public constructor
@@ -38,16 +39,35 @@ public class MapFragment extends Fragment {
             @Override
             public void onClick(View view) {
 
-                Toast.makeText(getActivity().getApplicationContext(), "Meu texto", Toast.LENGTH_LONG).show();
+//                Toast.makeText(getActivity().getApplicationContext(), "Meu texto", Toast.LENGTH_LONG).show();
 
                 MainActivity mainActivity = (MainActivity) getActivity();
 
+                LinearLayout.LayoutParams param;
 
-                LinearLayout.LayoutParams param = new LinearLayout.LayoutParams(
-                        LinearLayout.LayoutParams.MATCH_PARENT,
-                        LinearLayout.LayoutParams.MATCH_PARENT,
-                        0.0f
-                );
+                if(isExtend) {
+
+                    param = new LinearLayout.LayoutParams(
+                            LinearLayout.LayoutParams.MATCH_PARENT,
+                            LinearLayout.LayoutParams.MATCH_PARENT,
+                            30.0f
+                    );
+
+                    isExtend = false;
+
+                }
+                else{
+
+
+                    param = new LinearLayout.LayoutParams(
+                            LinearLayout.LayoutParams.MATCH_PARENT,
+                            LinearLayout.LayoutParams.MATCH_PARENT,
+                            0.0f
+                    );
+
+                    isExtend = true;
+
+                }
 
                 mainActivity.lltMap.setLayoutParams(param);
 
