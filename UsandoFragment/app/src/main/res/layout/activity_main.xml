@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    tools:context="com.weullermarcos.usandofragment.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/lltMap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="30">
+
+        <fragment
+            android:name="com.weullermarcos.usandofragment.MapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/fragment_map" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lltButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0">
+
+        <fragment
+            android:name="com.weullermarcos.usandofragment.NovoFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/fragment_novo" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
