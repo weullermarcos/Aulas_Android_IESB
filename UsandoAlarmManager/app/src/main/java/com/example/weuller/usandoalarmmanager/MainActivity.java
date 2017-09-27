@@ -12,6 +12,8 @@ import java.util.Calendar;
 
 public class MainActivity extends AppCompatActivity {
 
+    //Referência: http://www.botecodigital.info/android/agendando-tarefas-no-android/
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
