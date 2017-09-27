@@ -140,6 +140,9 @@ public class MainActivity extends AppCompatActivity {
 
                 showToast("Mac Address selecionado: " + macAddress);
 
+                mSecureAcceptThread = new AcceptThread();
+                mSecureAcceptThread.start();
+
             }
         });
 
